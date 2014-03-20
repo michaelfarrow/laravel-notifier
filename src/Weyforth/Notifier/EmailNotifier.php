@@ -1,14 +1,17 @@
 <?php namespace Weyforth\Notifier;
 
-use User;
 use Mail;
 use Config;
 
 class EmailNotifier implements NotifierInterface
 {
 
-    public function notify(NotfierUserInterface $user, $subject, $view, $data = array())
-    {
+    public function notify(
+        NotfierUserInterface $user,
+        $subject,
+        $view,
+        $data = array()
+    ) {
         Mail::send(
             $view,
             array_merge($data, compact('user')),

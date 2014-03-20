@@ -1,6 +1,5 @@
 <?php namespace Weyforth\Notifier;
 
-use User;
 use View;
 use Config;
 use Mailgun\Mailgun;
@@ -15,8 +14,12 @@ class MailGunNotifier implements NotifierInterface
         $this->mailgun = new Mailgun(Config::get('notifier.mailgun.key.secret'));
     }
 
-    public function notify(NotfierUserInterface $user, $subject, $view, $data = array())
-    {
+    public function notify(
+        NotfierUserInterface $user,
+        $subject,
+        $view,
+        $data = array()
+    ) {
         $domain = Config::get('notifier.mailgun.domain');
 
         $result = $this->mailgun->sendMessage(

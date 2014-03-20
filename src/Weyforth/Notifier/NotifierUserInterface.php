@@ -1,6 +1,6 @@
-<?php namespace Weyforth\Billing;
+<?php namespace Weyforth\Notifier;
 
-interface BillingUserInterface
+interface NotifierUserInterface
 {
 
     public function emailAddress();
