@@ -3,7 +3,7 @@
     "description": "",
     "license": "proprietary",
     "require": {
-        "laravel/laravel": "dev-master",
+        "laravel/framework": "4.1.*",
         "bogardo/mailgun": "dev-master"
     },
     "authors": [
@@ -16,5 +16,9 @@
         "psr-0": {
             "Weyforth\\Notifier": "src/"
         }
-    }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable"
 }
