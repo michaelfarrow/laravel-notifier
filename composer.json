@@ -4,7 +4,7 @@
     "license": "proprietary",
     "require": {
         "laravel/framework": "4.1.*",
-        "bogardo/mailgun": "dev-master@dev"
+        "bogardo/mailgun": "dev-master"
     },
     "authors": [
         {
@@ -16,5 +16,6 @@
         "psr-0": {
             "Weyforth\\Notifier": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
