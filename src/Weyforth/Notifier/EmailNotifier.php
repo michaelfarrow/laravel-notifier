@@ -1,7 +1,7 @@
 <?php namespace Weyforth\Notifier;
 
-use Mail;
-use Config;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Config;
 
 class EmailNotifier implements NotifierInterface
 {

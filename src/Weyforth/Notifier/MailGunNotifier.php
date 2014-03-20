@@ -1,7 +1,7 @@
 <?php namespace Weyforth\Notifier;
 
-use View;
-use Config;
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Config;
 use Mailgun\Mailgun;
 
 class MailGunNotifier implements NotifierInterface
