@@ -16,5 +16,9 @@
         "psr-0": {
             "Weyforth\\Notifier": "src/"
         }
-    }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable"
 }
