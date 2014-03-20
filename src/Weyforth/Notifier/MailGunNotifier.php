@@ -15,7 +15,7 @@ class MailGunNotifier implements NotifierInterface
         $this->mailgun = new Mailgun(Config::get('notifier.mailgun.key.secret'));
     }
 
-    public function notify(User $user, $subject, $view, $data = array())
+    public function notify(NotfierUserInterface $user, $subject, $view, $data = array())
     {
         $domain = Config::get('notifier.mailgun.domain');
 
@@ -26,7 +26,7 @@ class MailGunNotifier implements NotifierInterface
                           .' <'
                           .Config::get('notifier.address')
                           .'>',
-                'to' => $user->email,
+                'to' => $user->emailAddress(),
                 'subject' => $subject,
                 'html' => View::make($view)->with(
                     array_merge($data, compact('user'))

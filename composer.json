@@ -3,8 +3,8 @@
     "description": "",
     "license": "proprietary",
     "require": {
-        "laravel/laravel": "dev-master"
-        
+        "laravel/laravel": "dev-master",
+        "bogardo/mailgun": "dev-master"
     },
     "authors": [
         {

@@ -7,7 +7,7 @@ use Config;
 class EmailNotifier implements NotifierInterface
 {
 
-    public function notify(User $user, $subject, $view, $data = array())
+    public function notify(NotfierUserInterface $user, $subject, $view, $data = array())
     {
         Mail::send(
             $view,
@@ -18,7 +18,7 @@ class EmailNotifier implements NotifierInterface
                     Config::get('notifier.name')
                 );
                 $message->subject($subject);
-                $message->to($user->email);
+                $message->to($user->emailAddress());
             }
         );
     }
