@@ -4,7 +4,7 @@
     "license": "proprietary",
     "require": {
         "laravel/laravel": "dev-master",
-        "bogardo/mailgun": "2.0.*@dev"
+        "bogardo/mailgun": "dev-master"
     },
     "authors": [
         {
