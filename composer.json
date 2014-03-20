@@ -1,0 +1,20 @@
+{
+    "name": "weyforth/notifier",
+    "description": "",
+    "license": "proprietary",
+    "require": {
+        "laravel/laravel": "dev-master"
+        
+    },
+    "authors": [
+        {
+            "name": "Mike Farrow",
+            "email": "contact@mikefarrow.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Weyforth\\Notifier": "src/"
+        }
+    }
+}
