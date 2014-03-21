@@ -40,7 +40,7 @@ class MailGunNotifier implements NotifierInterface
         NotfierUserInterface $user,
         $subject,
         $view,
-        $data = array()
+        array $data = array()
     ) {
         $domain  = Config::get('notifier::mailgun.domain');
         $name    = Config::get('notifier::name');

@@ -6,6 +6,9 @@
         "laravel/framework": "4.1.*",
         "bogardo/mailgun": "dev-master"
     },
+    "require-dev": {
+        "mockery/mockery": "dev-master@dev"
+    },
     "authors": [
         {
             "name": "Mike Farrow",

@@ -23,7 +23,7 @@ class EmailNotifier implements NotifierInterface
         NotfierUserInterface $user,
         $subject,
         $view,
-        $data = array()
+        array $data = array()
     ) {
         Mail::send(
             $view,
