@@ -29,7 +29,7 @@ class MailGunNotifier implements NotifierInterface
      */
     public function __construct()
     {
-        $this->mailgun = new Mailgun(Config::get('notifier::mailgun.key.secret'));
+        $this->mailgun = new Mailgun(Config::get('notifier::config.mailgun.key.secret'));
     }
 
 
@@ -42,9 +42,9 @@ class MailGunNotifier implements NotifierInterface
         $view,
         array $data = array()
     ) {
-        $domain  = Config::get('notifier::mailgun.domain');
-        $name    = Config::get('notifier::name');
-        $address = Config::get('notifier::address');
+        $domain  = Config::get('notifier::config.mailgun.domain');
+        $name    = Config::get('notifier::config.name');
+        $address = Config::get('notifier::config.address');
 
         $result = $this->mailgun->sendMessage(
             $domain,
@@ -65,7 +65,7 @@ class MailGunNotifier implements NotifierInterface
      */
     public function subscribe($email, $list)
     {
-        $domain      = Config::get('notifier::mailgun.domain');
+        $domain      = Config::get('notifier::config.mailgun.domain');
         $membersList = 'lists/'.$list.'@'.$domain.'/members';
 
         try {

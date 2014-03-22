@@ -30,8 +30,8 @@ class EmailNotifier implements NotifierInterface
             array_merge($data, compact('user')),
             function ($message) use ($user, $subject) {
                 $message->from(
-                    Config::get('notifier::address'),
-                    Config::get('notifier::name')
+                    Config::get('notifier::config.address'),
+                    Config::get('notifier::config.name')
                 );
                 $message->subject($subject);
                 $message->to($user->emailAddress());
