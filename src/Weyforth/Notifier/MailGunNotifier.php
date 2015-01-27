@@ -37,7 +37,7 @@ class MailGunNotifier implements NotifierInterface
      * {@inheritdoc}
      */
     public function notify(
-        NotfierUserInterface $user,
+        NotifierUserInterface $user,
         $subject,
         $view,
         array $data = array()
