@@ -25,7 +25,7 @@ class NotifierServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('weyforth/notifier', 'notifier');
+        $this->package('weyforth/laravel-notifier', 'notifier');
     }
 
 
