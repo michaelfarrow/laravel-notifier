@@ -1,5 +1,5 @@
 {
-    "name": "weyforth/notifier",
+    "name": "weyforth/laravel-notifier",
     "description": "",
     "license": "proprietary",
     "require": {
