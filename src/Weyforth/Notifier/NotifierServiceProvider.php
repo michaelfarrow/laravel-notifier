@@ -25,7 +25,7 @@ class NotifierServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('weyforth/notifier');
+        $this->package('weyforth/notifier', 'notifier');
     }
 
 
