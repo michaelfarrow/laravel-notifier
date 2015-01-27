@@ -30,7 +30,7 @@ interface NotifierInterface
      * @return void
      */
     public function notify(
-        NotfierUserInterface $user,
+        NotifierUserInterface $user,
         $subject,
         $view,
         array $data = array()
